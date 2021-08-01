@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Employee Management</title>
+</head>
+<body>
+    <header class="header container">
+        <h1 class="title">Employee Management</h1>
+        <button id="btn-employee" class="btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New Employee</button>
+    </header>
+
+    <main class="main container">
+        <table id="table-employees">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal Add -->
+
+    <div id="modal-add" class="modal">
+        <a class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-header">
+            <h2 class="text-center">Add New Employee</h2>
+        </div>
+        <div class="modal-content">
+            <div class="input-item">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Full Name">
+            </div>
+            <div class="input-item">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div>
+            <div class="input-item">
+                <label for="address">Address:</label>
+                <input id="address" type="text" placeholder="Enter your Address">
+            </div>
+            <div class="input-item">
+                <label for="phone">Phone:</label>
+                <input id="phone" type="tel" placeholder="Enter your Phone">
+            </div>
+        </div>
+
+        <div class="alert"></div>
+        
+        <button class="btn"><i class="fa fa-user" aria-hidden="true"></i> Add Employee</button>
+    </div>
+
+    <!-- Modal Edit -->
+
+    <div id="modal-edit" class="modal">
+        <a class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-header">
+            <h2 class="text-center">Edit Employee</h2>
+        </div>
+        <div class="modal-content">
+            <div class="input-item">
+                <label for="name-edit">Name:</label>
+                <input id="name-edit" type="text" placeholder="Full Name">
+            </div>
+            <div class="input-item">
+                <label for="email-edit">E-mail:</label>
+                <input id="email-edit" type="email" placeholder="Enter your email">
+            </div>
+            <div class="input-item">
+                <label for="address-edit">Address:</label>
+                <input id="address-edit" type="text" placeholder="Enter your Address">
+            </div>
+            <div class="input-item">
+                <label for="phone-edit">Phone:</label>
+                <input id="phone-edit" type="tel" placeholder="Enter your Phone">
+            </div>
+
+        </div>
+
+        <div class="alert"></div>
+        
+        <button class="btn"><i class="fa fa-user" aria-hidden="true"></i> Edit Employee</button>
+    </div>
+
+
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
